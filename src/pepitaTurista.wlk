@@ -22,14 +22,14 @@ object pepita {
 	}
 
 	method vacacionar(unLugar) {
-		energia += unLugar.aporte()
+		energia += unLugar.energiaRevitalizadora()
 	}
 
 }
 
 object patagonia {
 
-	method aporte() {
+	method energiaRevitalizadora() {
 		return 30
 	}
 
@@ -37,7 +37,7 @@ object patagonia {
 
 object sierrasCordobesas {
 
-	method aporte() {
+	method energiaRevitalizadora() {
 		return 70
 	}
 
@@ -47,7 +47,7 @@ object marDelPlata {
 
 	var temporadaBaja = true
 
-	method aporte() {
+	method energiaRevitalizadora() {
 		return if (temporadaBaja) return 80 else -20
 	}
 
