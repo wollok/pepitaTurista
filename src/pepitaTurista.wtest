@@ -1,20 +1,17 @@
 import pepitaTurista.*
-test "pepita volar" {
 
+test "pepita volar" {
 	pepita.volar(5)
 	assert.equals(85, pepita.energia())
 	pepita.volar(15)
 	assert.equals(60, pepita.energia())
-
 }
 
 test "pepita comer" {
-
 	pepita.comer(10)
 	assert.equals(140, pepita.energia())
 	pepita.comer(5)
 	assert.equals(160, pepita.energia())
-
 }
 
 test "pepita vacaciona en la patagonia" {
