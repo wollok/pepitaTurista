@@ -48,7 +48,7 @@ object marDelPlata {
 	var temporadaBaja = true
 
 	method energiaRevitalizadora() {
-		return if (temporadaBaja) return 80 else -20
+		return if (temporadaBaja) 80 else -20
 	}
 
 	method cambioTemporada() {
