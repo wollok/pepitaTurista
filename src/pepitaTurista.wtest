@@ -1,0 +1,39 @@
+import pepitaTurista.*
+test "pepita volar" {
+
+	pepita.volar(5)
+	assert.equals(85, pepita.energia())
+	pepita.volar(15)
+	assert.equals(60, pepita.energia())
+
+}
+
+test "pepita comer" {
+
+	pepita.comer(10)
+	assert.equals(140, pepita.energia())
+	pepita.comer(5)
+	assert.equals(160, pepita.energia())
+
+}
+
+test "pepita vacaciona en la patagonia" {
+	pepita.vacacionar(patagonia)
+	assert.equals(130, pepita.energia())
+}
+
+test "pepita vacaciona en las sierras" {
+	pepita.vacacionar(sierrasCordobesas)
+	assert.equals(170, pepita.energia())
+}
+
+test "pepita vacaciona en mar del plata temporada baja" {
+	pepita.vacacionar(marDelPlata)
+	assert.equals(180, pepita.energia())
+}
+
+test "pepita vacaciona en mar del plata temporada alta" {
+	marDelPlata.cambioTemporada()
+	pepita.vacacionar(marDelPlata)
+	assert.equals(80, pepita.energia())
+}
