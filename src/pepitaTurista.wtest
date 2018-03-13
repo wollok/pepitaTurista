@@ -34,3 +34,8 @@ test "pepita vacaciona en mar del plata temporada alta" {
 	pepita.vacacionar(marDelPlata)
 	assert.equals(80, pepita.energia())
 }
+
+test "pepita vacaciona en noroeste" {
+	pepita.vacacionar(noroeste)
+	assert.equals(110, pepita.energia())
+}
