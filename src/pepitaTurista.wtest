@@ -30,7 +30,7 @@ test "pepita vacaciona en mar del plata temporada baja" {
 }
 
 test "pepita vacaciona en mar del plata temporada alta" {
-	marDelPlata.cambioTemporada()
+	marDelPlata.temporada(alta)
 	pepita.vacacionar(marDelPlata)
 	assert.equals(80, pepita.energia())
 }

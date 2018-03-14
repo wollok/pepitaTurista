@@ -45,17 +45,30 @@ object sierrasCordobesas {
 
 object marDelPlata {
 
-	var temporadaBaja = true
+	var temporada = baja
 
 	method energiaRevitalizadora(turista) {
-		return if (temporadaBaja) 80 else -20
+		return temporada.energiaRevitalizadoraActual()
 	}
 
-	method cambioTemporada() {
-		temporadaBaja = !temporadaBaja
+	method temporada(unaTemporada) {
+		temporada= unaTemporada
 	}	
 	
 }
+
+object baja {
+	method energiaRevitalizadoraActual() {
+		return 80
+	}	
+}
+
+object alta {
+	method energiaRevitalizadoraActual() {
+		return -20
+	}	
+}
+
 
 object noroeste {
 	
