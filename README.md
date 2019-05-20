@@ -1,4 +1,7 @@
 # pepitaTurista
+ 
+[![Build Status](https://travis-ci.org/wollok/pepitaTurista.svg?branch=master)](https://travis-ci.org/wollok/pepitaTurista)
+
 
 Este ejemplo sirve para las dos primeras clases de objetos:
 - incluye la tradicional pepita de Carlos Lombardi para objeto/mensaje/methodo/referencia
